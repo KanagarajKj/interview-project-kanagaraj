@@ -35,6 +35,8 @@ button {
 
 a {
     text-decoration: none;
+    color: #000000;
+    cursor: pointer;
 }
 
 
@@ -124,6 +126,16 @@ color: white;
     align-items: center;
 }
 
+.project_btn {
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    background-color: #F99F1B;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
 
 .menu_btn{
     background-color: transparent;
@@ -137,73 +149,142 @@ color: white;
     color: var(--Font-color);
 }
 
-.project_btn {
+.contacts a{
+    color: #000000;
     cursor: pointer;
-    padding: 0.5rem 0.8rem;
-    border-radius: 5px;
-    background-color: #F99F1B;
-    border: none;
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
 }
 
-.parents p button {
-    background-color: transparent;
-    border: none;
-    margin-left: 5px;
-}
-
-/* .parents p .minus {
-    display: none;
-}
-
-.parents p .minus.active {
-    display: inline;
-    color: var(--Font-color);
-}
-
-.plus.active {
-    display: none;
-}
-
-.firstmenu {
-    display: none;
-}
-
-.firstmenu.show{
-    display: block;
-} */
-
-.childs {
-    display: none;
-    font-size: 0.9rem;
-    margin-left: 10px;
-}
-
-/* .childs.active {
-    display: block;
-}
-
-.parents.active {
-    display: block;
-} */
 
 .parents {
     display: none;
 }
 
-/* .services{
+.childs {
+    display: none;
+}
+
+/* Menu Button */
+
+.first_menu_btn {
+    border: none;
+    background-color: transparent;
+}
+
+.first_menu_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* First Menu */
+
+.service {
     position: relative;
 }
 
 .services_childs {
     position: absolute;
-    margin-top: 1.5rem;
+    top: 5.2rem;
     background-color: white;
-    padding: 5px;
     border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+    display: none;
 }
+
+.services_childs.add {
+    display: block;
+}
+
+.service_childs_one {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.service_childs_one li a:hover {
+    color: #219ebc;
+}
+
+.service_childs_one.adds {
+    display: inline;
+}
+
+.service_childs_two {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.service_childs_two li a:hover {
+    color: #219ebc;
+}
+
+.service_childs_two.addmenu {
+    display: inline;
+}
+
+.service_childs_three {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.service_childs_three li a:hover {
+    color: #219ebc;
+}
+
+.service_childs_three.added {
+    display: inline;
+}
+
+
+/* Button */
+.service_childs_one_plus_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.service_childs_one_plus_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* Button Two */
+.service_childs_two_plus_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.service_childs_two_plus_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* Button Three */
+
+.service_childs_three_plus_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.service_childs_three_plus_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* Menu Button */
+
+.second_menu_btn {
+    border: none;
+    background-color: transparent;
+}
+
+.second_menu_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* second Menu */
 
 .solutions {
     position: relative;
@@ -211,11 +292,94 @@ color: white;
 
 .solutions_childs {
     position: absolute;
-    margin-top: 1.4rem;
+    top: 3.5rem;
+    width: max-content;
+    padding: 0.5rem;
     background-color: white;
-    padding: 5px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+    display: none;
 }
+
+.solutions_childs.active {
+    display: block;
+}
+
+.solutions_child_one {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.solutions_child_one li a:hover {
+    color: #219ebc;
+}
+
+.solutions_child_one.actived {
+    display: inline;
+}
+
+.solutions_child_two {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.solutions_child_two li a:hover {
+    color: #219ebc;
+}
+
+.solutions_child_two.actives {
+    display: inline;
+}
+
+.solutions_child_three {
+    display: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.solutions_child_three li a:hover {
+    color: #219ebc;
+}
+
+.solutions_child_three.activemenu {
+    display: block;
+}
+
+/* Button */
+.solutions_child_one_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.solutions_child_one_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* Button Two */
+.solutions_child_two_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.solutions_child_two_btn:hover {
+    color: var(--Font-color);
+}
+
+
+/* Button Three */
+.solutions_child_three_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.solutions_child_three_btn:hover {
+    color: var(--Font-color);
+}
+
+/* Third Menu */
 
 .weare {
     position: relative;
@@ -223,43 +387,71 @@ color: white;
 
 .weare_childs {
     position: absolute;
-    margin-top: 1.4rem;
+    top: 3.5rem;
+    width: max-content;
+    padding: 0.5rem;
     background-color: white;
-    padding: 5px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+    width: 7rem;
+    display: none;
 }
 
-.resources{
+.weare_childs.adding {
+display: block;
+}
+
+.weare_childs li a:hover{
+color: #0046E5;
+}
+
+/* Button */
+.resources_menu_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.resources_menu_btn:hover {
+    color: var(--Font-color);
+}
+
+/* Fourth Menu */
+
+.resources {
     position: relative;
 }
 
 .resources_childs {
     position: absolute;
-    margin-top: 1.4rem;
+    top: 3.5rem;
+    width: max-content;
+    padding: 0.5rem;
     background-color: white;
-    padding: 5px;
     border-radius: 5px;
-}
-
-.plus {
-    border: none;
-    background-color: transparent;
-    margin-left: 0.5rem;
-}
-
-.plus.show {
-display: none;
-}
-
-.minus {
-    border: none;
-    background-color: transparent;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+    width: 9rem;
     display: none;
 }
 
-.minus.less{
-    display: inline;
-} */
+.resources_childs.adden {
+display: block;
+}
+
+.resources_childs li a:hover{
+color: #0046E5;
+}
+
+
+/* Button */
+.weare_menu_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.weare_menu_btn:hover {
+    color: var(--Font-color);
+}
+
 
 
 /* Slide Image */
@@ -946,3 +1138,6 @@ border-radius: 50%;
     margin: auto;
     border-top: 2px solid var(--Font-color);
 }
+
+
+
