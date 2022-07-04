@@ -140,13 +140,12 @@ color: white;
     position: fixed;
     background-color: rgba(242, 145, 0,1);
     color: white;
-    left: 0%;
+    left:100%;
     top: 0;
-    transition: 0.5s ease-in;
+    transition: 1s;
     padding-top: 3rem;
     z-index: 1;
 }
-
 
 .nav_childrens {
     width: 100%;
@@ -158,8 +157,8 @@ color: white;
 }
 
 .navbar.menuopen {
-    left: 100%;
-    transition: 1s ease-out;
+    left: 0;
+    transition: 1s;
 }
 
 
@@ -187,7 +186,7 @@ color: white;
     display: none;
     color: black;
     z-index: 1;
-    width: 50%;
+    width: 80%;
 }
 
 .services_childs.add {
@@ -287,7 +286,6 @@ color: white;
 
 .solutions_childs {
     position: absolute;
-    top: 3.5rem;
     width: max-content;
     padding: 0.5rem;
     background-color: white;
@@ -380,7 +378,6 @@ color: white;
 
 .weare_childs {
     position: absolute;
-    top: 3.5rem;
     width: max-content;
     padding: 0.5rem;
     background-color: white;
@@ -415,7 +412,6 @@ color: #0046E5;
 
 .resources_childs {
     position: absolute;
-    top: 3.5rem;
     width: max-content;
     padding: 0.5rem;
     background-color: white;
@@ -423,7 +419,7 @@ color: #0046E5;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
     width: 9rem;
     display: none;
-     color: black;
+    color: black;
     z-index: 1;
 }
 
@@ -499,10 +495,7 @@ display: none;
 .contact_icon {
     display: flex;
     gap: 1rem;
-    position: fixed;
-    right: 0;
-    top: 50rem;
-    z-index: 1;
+    text-align: right;
 }
 
 .contact_icon i {
@@ -510,7 +503,7 @@ display: none;
     color: white;
     padding: 1rem;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
@@ -1630,9 +1623,10 @@ display: none;
 /* Contact Icon */
 .contact_icon {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 5rem;
     position: fixed;
-    right: 3rem;
+    right: 7rem;
     top: 75vh;
     z-index: 1;
 }
