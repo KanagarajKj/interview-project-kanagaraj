@@ -1,7 +1,5 @@
 'use strict';
 // Navbar 
-
-
 // First Menu
 
 const firstMenuBtn = document.getElementById('first_menu_btn');
@@ -82,6 +80,17 @@ resourceMenuBtn.addEventListener('click', () => {
 });
 
 
+// Navbar Open
+
+const navOpen = document.getElementById('navbar')
+const menuIcon = document.getElementById('menu_icon')
+
+menuIcon.addEventListener('click', () => {
+  navOpen.classList.toggle('menuopen');
+});
+
+
+
 // Image Slider
 let counter = 1;
 setInterval(() => {
@@ -91,4 +100,4 @@ setInterval(() => {
   if (counter > 4) {
     counter = 1;
   }
-}, 3000);
+}, 2000);

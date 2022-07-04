@@ -15,7 +15,7 @@
 
 
 <!-- Header Section Start -->
-<header class="header_cta">
+<div class="header_cta">
 
 
 <!-- Header Left Start -->
@@ -37,11 +37,14 @@
 
     <!--Header Right Start  -->
     <section class="header_right">
-
+<div >
+   <button class="menu_icon" id="menu_icon"><i class="fa-solid fa-bars"></i></button>
+</div>
         <!-- Navbar Start -->
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
 
-                <span class="menu_childrens">                                   
+                <div class="nav_childrens">
+                    <div class="menu_childrens">                                   
                 <span class="services">
                     <p>Code Services 
                         <button class="first_menu_btn" id="first_menu_btn">
@@ -88,7 +91,7 @@
                     </li>
                 </ul>
 
-                </span>
+                </div>
 
 
                 <span class="solutions">                
@@ -171,17 +174,17 @@
                 <section class="contacts"><a href="#footer">Contact us</a> </section>                  
                 <section class="button"> <button class="project_btn">Start a Project</button> </section>             
 
+                </div>
         </nav>
         <!-- Navbar End -->
 
         
         <!-- Image slider Start -->
-<div class="slider">
+<section class="slider">
   <div class="slides">
   <input type="radio" name="radio_btn" id="radio1">
   <input type="radio" name="radio_btn" id="radio2">
   <input type="radio" name="radio_btn" id="radio3">
-  <input type="radio" name="radio_btn" id="radio4">
 
   <div class="slide first">
     <img src="./assests/images//slideimg-1.jpeg" alt="first-img">
@@ -192,20 +195,15 @@
   <div class="slide">
     <img src="./assests/images//slideimg-3.jpeg" alt="third-img">
   </div>
-
-  <div class="navigation_auto">
-    <div class="auto_btn1"></div>
-    <div class="auto_btn2"></div>
-    <div class="auto_btn3"></div>
-  </div>
+  
   </div>
   <div class="navigation_manual">
     <label for="radio1" class="manual_btn"></label>
     <label for="radio2" class="manual_btn"></label>
     <label for="radio3" class="manual_btn"></label>
   </div>
-
-</div>
+</section>
+   
  <!-- Image Slider end -->
 <!-- Header Right End -->
 
@@ -220,8 +218,14 @@
     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
     <a href="#"><i class="fa-solid fa-phone"></i></a>
 </div>
-</header>
+
+
+ </section>
+ </div>
 <!-- Header Section End -->
+
+
+
 
 <!--Section One Start -->
 <section class="section_one">
@@ -353,14 +357,32 @@
         <h3>Explore All our Services We Offer to Customers </h3>
     </div>
     <div class="services_a">
-        <img src="./assests/images/serImg-1.jpeg" alt="Services_img">
-        <img src="./assests/images/serImg-2.jpeg" alt="Services_img">
-        <img src="./assests/images/serImg-3.jpeg" alt="Services_img">
+        <span>
+            <img src="./assests/images/serImg-1.jpeg" alt="Services_img">
+            <p>Web Modernization</p>
+        </span>
+        <span>
+            <img src="./assests/images/serImg-2.jpeg" alt="Services_img">
+            <p>Digital Marketing</p>
+        </span>
+        <span>
+            <img src="./assests/images/serImg-3.jpeg" alt="Services_img">
+            <p>App Modernization</p>
+        </span>
     </div>
     <div class="services_b">
-        <img src="./assests/images/serImg-4.jpeg" alt="Services_img">
-        <img src="./assests/images/serImg-5.jpeg" alt="Services_img">
-        <img src="./assests/images/serImg-6.jpeg" alt="Services_img">
+        <span>
+            <img src="./assests/images/serImg-4.jpeg" alt="Services_img">
+            <p>UI & UX</p>
+        </span>
+        <span>
+            <img src="./assests/images/serImg-5.jpeg" alt="Services_img">
+            <p>Innovative Ideas</p>
+        </span>
+        <span>
+            <img src="./assests/images/serImg-6.jpeg" alt="Services_img">
+            <p>IOT Technologies</p>
+        </span>
     </div>
 </section>
 <!-- Services End -->
